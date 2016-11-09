@@ -28,8 +28,8 @@ public:
     Wizard(int level);
     virtual void PrintClass() override; // The override keyword is not required.
                                         // It does however, help the compiler know that we intend this function to override something.
-                                        // This can be helpful, for example in the situation where the names don't match.
+                                        // This can be helpful, for example in the situation where the names/parameters/return types don't match.
                                         // The compiler would complain that there's no function to override.
-                                        // Without the override keyword, the compiler will just assume that it's a different function.
+                                        // Without the override keyword, the compiler will just assume that it's a different function, and it won't override correctly.
 
 };
